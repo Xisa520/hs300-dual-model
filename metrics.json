@@ -1,0 +1,77 @@
+{
+  "data_start": "2021-01-04",
+  "data_end": "2026-10-30",
+  "split_train_end": "2024-11-13",
+  "split_val_start": "2024-11-15",
+  "split_test_start": "2025-09-12",
+  "dma": {
+    "validation": {
+      "n": 202,
+      "accuracy": 0.4901,
+      "balanced_accuracy": 0.5223,
+      "mcc": 0.051,
+      "confusion_matrix": [
+        [
+          68,
+          20
+        ],
+        [
+          83,
+          31
+        ]
+      ]
+    },
+    "test": {
+      "n": 270,
+      "accuracy": 0.5296,
+      "balanced_accuracy": 0.5287,
+      "mcc": 0.0593,
+      "confusion_matrix": [
+        [
+          89,
+          47
+        ],
+        [
+          80,
+          54
+        ]
+      ]
+    }
+  },
+  "cnn": {
+    "validation": {
+      "n": 202,
+      "accuracy": 0.4356,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0,
+      "confusion_matrix": [
+        [
+          88,
+          0
+        ],
+        [
+          114,
+          0
+        ]
+      ]
+    },
+    "test": {
+      "n": 270,
+      "accuracy": 0.5037,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0,
+      "confusion_matrix": [
+        [
+          136,
+          0
+        ],
+        [
+          134,
+          0
+        ]
+      ]
+    },
+    "trained_epochs": 5
+  },
+  "notes": "复现结构的重新训练实现，不是上一组训练时保存的模型权重；旧报告的2013-2020结果不可与本样本直接比较。"
+}

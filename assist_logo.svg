@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="180" viewBox="0 0 820 180" role="img" aria-label="aSSIST University logo">
+  <rect width="820" height="180" rx="24" fill="#ffffff"/>
+  <g transform="translate(26,26)">
+    <circle cx="64" cy="64" r="58" fill="#0f4c81"/>
+    <circle cx="64" cy="64" r="40" fill="#ffffff" opacity="0.13"/>
+    <path d="M55 88c-10 0-18-8-18-18 0-9 7-17 16-18 2-17 16-30 34-30 18 0 33 14 34 32 9 2 16 10 16 19 0 10-8 18-18 18H55z" fill="#fff"/>
+    <path d="M51 66c10-13 28-23 52-26-10 11-18 26-22 42" stroke="#0f4c81" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="170" y="82" font-size="62" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#0f4c81">aSSIST</text>
+  <text x="174" y="113" font-size="23" font-family="Arial, Helvetica, sans-serif" fill="#4a6076">Seoul School of Integrated Sciences &amp; Technologies</text>
+  <text x="174" y="146" font-size="24" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" fill="#1b2a41">首尔科学综合大学院大学</text>
+</svg>
