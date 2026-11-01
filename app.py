@@ -17,8 +17,8 @@ from core import CNNStock, FEATURES, indicators, make_images
 
 ROOT = Path(__file__).resolve().parent
 TZ = ZoneInfo("Asia/Shanghai")
-LOGO_PATH = ROOT / "assets" / "assist_logo.svg"
-METRICS_PATH = ROOT / "models" / "metrics.json"
+LOGO_PATH = ROOT / "assist_logo.svg"
+METRICS_PATH = ROOT / "metrics.json"
 
 st.set_page_config(
     page_title="HS300 双模型方向预测系统",
@@ -100,9 +100,9 @@ def online_quotes() -> pd.DataFrame:
 
 @st.cache_resource(show_spinner=False)
 def models():
-    dma = joblib.load(ROOT / "models" / "dma_classifier.joblib")
+    dma = joblib.load(ROOT / "dma_classifier.joblib")
     cnn = CNNStock()
-    cnn.load_state_dict(torch.load(ROOT / "models" / "cnn_stock.pt", map_location="cpu", weights_only=True))
+    cnn.load_state_dict(torch.load(ROOT / "cnn_stock.pt", map_location="cpu", weights_only=True))
     cnn.eval()
     return cnn, dma
 
@@ -114,7 +114,7 @@ def read_metrics() -> dict:
 
 
 def load_market():
-    local = pd.read_csv(ROOT / "data" / "hs300_2021_2026.csv", encoding="utf-8-sig")
+    local = pd.read_csv(ROOT / "hs300_2021_2026.csv", encoding="utf-8-sig")
     try:
         live = online_quotes()
         merged = pd.concat([local, live], ignore_index=True)
